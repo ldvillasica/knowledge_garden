@@ -1,5 +1,3 @@
 ---
 title: "Methods"
 ---
-
-## Soil Aggregate Stability
