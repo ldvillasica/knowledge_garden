@@ -10,6 +10,8 @@ website:
         text: Home
       - about.qmd
       - Methods_Development.qmd
+      - Data_Analysis.qmd
+      - Visualization.qmd
 
 format:
   html:
