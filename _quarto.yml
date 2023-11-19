@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: CloudBrain
+  title: Knowledge Garden
   navbar:
     background: primary
     search: true
