@@ -2,4 +2,8 @@
 title: "Methods"
 ---
 
-## Test content
+## Whats on this Page?
+
+This page shares the current and on-going methods being developed by the students in our laboratory.
+
+Click or navigate to the left sidebar to view current methods being develop in our laboratory

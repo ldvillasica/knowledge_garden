@@ -2,4 +2,6 @@
 title: "Welcome!"
 ---
 
+![CSU-Soil Science Team](images/367304827_280391984612040_4525028577239053072_n.jpg)
+
 This website is a repository of all the technical notes on my professional life.

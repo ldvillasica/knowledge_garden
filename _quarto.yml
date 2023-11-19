@@ -17,6 +17,8 @@ website:
         file: Data_Analysis.qmd
       - text: "Visualization"
         file: Visualization.qmd
+  page-navigation: TRUE
+  page-footer: "Copyright 2023, LJD Villasica"
 
   sidebar:
     - title: "Notes"
@@ -24,29 +26,29 @@ website:
       background: light
       contents:
         - Notes.qmd
-        - Note 1.qmd
-        - Note 2.qmd
+        - Note 1
+        - Note 2
         
     - title: "Methods"
       style: "docked"
       background: light
       contents:
         - Methods_Development.qmd
-        - Method 1.qmd
-        - Method 2.qmd
+        - Method 1
+        - Method 2
 
     - title: "Analysis"
       contents:
         - Data_Analysis.qmd
-        - Experimental Design Making.qmd
+        - Experimental Design Making
         - ANOVA
         # navigation items
 
     - title: "Visualization"
       contents:
         - Visualization.qmd
-        - Soil Profile Sketch.qmd
-        - Soil Textural Cluster.qmd
+        - Soil Profile Sketch
+        - Soil Textural Cluster
         # navigation items
 
 format:
