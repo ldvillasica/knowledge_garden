@@ -5,7 +5,6 @@ project:
 website:
   title: Knowledge Garden
   navbar:
-    background: primary
     search: true
     left:
       - text: "Home"
