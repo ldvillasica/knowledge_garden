@@ -3,13 +3,3 @@ title: "Welcome!"
 ---
 
 This website is a repository of all the technical notes on my professional life.
-
-# Categories
-
-1.  Methods Development
-
-2.  Data Analysis
-
-3.  Data Visualization
-
-4.  Zotero Usage
