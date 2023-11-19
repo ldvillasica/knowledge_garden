@@ -9,6 +9,8 @@ website:
     left:
       - text: "Home"
         file: index.qmd
+      - text: "Notes"
+        file: Notes.qmd
       - text: "Methods"
         file: Methods_Development.qmd
       - text: "Analysis"
@@ -17,6 +19,14 @@ website:
         file: Visualization.qmd
 
   sidebar:
+    - title: "Notes"
+      style: "docked"
+      background: light
+      contents:
+        - Notes.qmd
+        - Note 1.qmd
+        - Note 2.qmd
+        
     - title: "Methods"
       style: "docked"
       background: light
