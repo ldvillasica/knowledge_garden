@@ -3,15 +3,39 @@ project:
   output-dir: docs
 
 website:
-  title: "Knowledge Garden"
+  title: CloudBrain
   navbar:
+    background: primary
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-      - Methods_Development.qmd
-      - Data_Analysis.qmd
-      - Visualization.qmd
+      - text: "Home"
+        file: index.qmd
+      - text: "Methods"
+        file: Methods_Development.qmd
+      - text: "Analysis"
+        file: Data_Analysis.qmd
+      - text: "Visualization"
+        file: Visualization.qmd
+
+  sidebar:
+    - title: "Methods"
+      style: "docked"
+      background: light
+      contents:
+        - Methods and Protocols.qmd
+        - Method 1.qmd
+        - Method 2.qmd
+
+    - title: "Analysis"
+      contents:
+        - Guides to Analysis.qmd
+        # navigation items
+
+    - title: "Visualization"
+      contents:
+        - Soil Profile Sketch.qmd
+        - Soil Textural Cluster.qmd
+        # navigation items
 
 format:
   html:
