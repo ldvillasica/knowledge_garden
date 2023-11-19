@@ -1,11 +1,5 @@
 ---
-title: "knowledge_garden"
+title: "Welcome!"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+This website is a repository of all the technical notes on my professional life.

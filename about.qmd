@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
+Leo Jude Villasica
 
-```{r}
-1 + 1
-```
+Soil Scientist, Data Analyst and an active learner for new things
