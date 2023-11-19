@@ -22,17 +22,20 @@ website:
       style: "docked"
       background: light
       contents:
-        - Methods and Protocols.qmd
+        - Methods_Development.qmd
         - Method 1.qmd
         - Method 2.qmd
 
     - title: "Analysis"
       contents:
-        - Guides to Analysis.qmd
+        - Data_Analysis.qmd
+        - Experimental Design Making.qmd
+        - ANOVA
         # navigation items
 
     - title: "Visualization"
       contents:
+        - Visualization.qmd
         - Soil Profile Sketch.qmd
         - Soil Textural Cluster.qmd
         # navigation items
