@@ -3,7 +3,6 @@ title: "Welcome!"
 listing:
   contents:
     - "Soil Textural Cluster.qmd"
-    - "Data_Analysis.qmd"
   type: table
 ---
 

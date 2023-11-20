@@ -20,7 +20,7 @@ website:
       - text: "Visualization"
         file: Visualization.qmd
   page-navigation: TRUE
-  page-footer: "Copyright 2023, LJD Villasica"
+  page-footer: "Copyright 2023, Leo Jude D. Villasica"
   
   sidebar:
     - title: "Notes"

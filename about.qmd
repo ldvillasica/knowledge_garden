@@ -1,5 +1,5 @@
 ---
-title: "Leo Jude Villasica"
+title: "Leo Jude D. Villasica"
 about:
   template: trestles
   image: profile.jpeg
