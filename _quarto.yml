@@ -21,7 +21,7 @@ website:
         file: Visualization.qmd
   page-navigation: TRUE
   page-footer: "Copyright 2023, LJD Villasica"
-
+  
   sidebar:
     - title: "Notes"
       style: "docked"
@@ -61,3 +61,4 @@ format:
 
 editor: visual
 
+license: "CC BY-NC-ND"
