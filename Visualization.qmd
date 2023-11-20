@@ -4,7 +4,7 @@ title: "Visualization"
 
 ## What's on this page?
 
-This page put up some of the r script I used to analyze data from various experiment and surveys we conducted
+This page put up some of the r script I used to visualize data from various experiment and surveys we conducted
 
 ::: callout-note
 ## How to Navigate
