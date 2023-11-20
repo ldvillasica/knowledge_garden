@@ -4,28 +4,28 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "This website is a repository of all the technical notes on my professional life."
+    "text": "This website is a repository of all the technical notes on my professional life.\n\n\n\n\n\n\nUse of Content\n\n\n\nAll contents in this website is for academic and research purposes only. Any form of disagreement about the contents posted here should be directly email to the author."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Leo Jude Villasica",
     "section": "",
-    "text": "Soil Scientist, Data Analyst and an active learner of new things.\nCurrently I am a Faculty of the Department of Plant and Soil Science, College of Agriculture and Agri-industries (CAA), Caraga State University (CSU) since 2015."
+    "text": "Education\n\n\n\nVisayas State University | Baybay City, Philippines\nMS in Soil Science, | 2013 - 2015\nVisayas State University | Baybay City, Philippines\nBS in Agriculture major in Soil Science | 2009 - 2013\n\n\n\n\n\n\n\n\nOther Designation\n\n\n\nResearch Center Director | Caraga Center for Agricultural Research and Entrepreneurship (Caraga-CARE) | 2018 - present\nManaging Editor | Journal of Ecosystem Sciences and Eco-Governance (JESEG) | 2019 - present"
   },
   {
     "objectID": "Methods_Development.html",
     "href": "Methods_Development.html",
     "title": "Methods",
     "section": "",
-    "text": "This page shares the current and on-going methods being developed by the students in our laboratory.\nClick or navigate to the left sidebar to view current methods being develop in our laboratory"
+    "text": "This page shares the current and on-going methods being developed by the students in our laboratory.\n\n\n\n\n\n\nHow to Navigate\n\n\n\nClick or navigate to the left sidebar to view current methods being develop in our laboratory"
   },
   {
     "objectID": "about.html#leo-jude-villasica",
     "href": "about.html#leo-jude-villasica",
     "title": "About",
     "section": "",
-    "text": "Soil Scientist, Data Analyst and an active learner of new things.\nCurrently I am a Faculty of the Department of Plant and Soil Science, College of Agriculture and Agri-industries (CAA), Caraga State University (CSU) since 2015."
+    "text": "Soil Scientist, Data Analyst and an active learner of new things.\nCurrently I am a Faculty of the Department of Plant and Soil Science, College of Agriculture and Agri-industries (CAA), Caraga State University (CSU) since 2015.\nemail: ldvillasica@carsu.edu.ph"
   },
   {
     "objectID": "Soil Textural Cluster.html",
@@ -39,20 +39,69 @@
     "href": "Methods_Development.html#whats-on-this-page",
     "title": "Methods",
     "section": "",
-    "text": "This page shares the current and on-going methods being developed by the students in our laboratory.\nClick or navigate to the left sidebar to view current methods being develop in our laboratory"
+    "text": "This page shares the current and on-going methods being developed by the students in our laboratory.\n\n\n\n\n\n\nHow to Navigate\n\n\n\nClick or navigate to the left sidebar to view current methods being develop in our laboratory"
   },
   {
     "objectID": "Notes.html",
     "href": "Notes.html",
     "title": "Notes and Factsheets",
     "section": "",
-    "text": "Notes I’ve taken from books and articles on specific topics that might be of help to students and someone who just want to learn something new.\nNotes in this page are progressively improved and develop. Please refresh for the newest content\nClick or navigate to the left sidebar to view current methods being develop in our laboratory"
+    "text": "Notes I’ve taken from books and articles on specific topics that might be of help to students and someone who just want to learn something new.\nNotes in this page are progressively improved and developed. Please refresh for the newest content.\n\n\n\n\n\n\nHow to Navigate\n\n\n\nClick or navigate to the left sidebar to view current notes being developed."
   },
   {
     "objectID": "Notes.html#whats-in-this-page",
     "href": "Notes.html#whats-in-this-page",
     "title": "Notes and Factsheets",
     "section": "",
-    "text": "Notes I’ve taken from books and articles on specific topics that might be of help to students and someone who just want to learn something new.\nNotes in this page are progressively improved and develop. Please refresh for the newest content\nClick or navigate to the left sidebar to view current methods being develop in our laboratory"
+    "text": "Notes I’ve taken from books and articles on specific topics that might be of help to students and someone who just want to learn something new.\nNotes in this page are progressively improved and developed. Please refresh for the newest content.\n\n\n\n\n\n\nHow to Navigate\n\n\n\nClick or navigate to the left sidebar to view current notes being developed."
+  },
+  {
+    "objectID": "Data_Analysis.html",
+    "href": "Data_Analysis.html",
+    "title": "Analysis",
+    "section": "",
+    "text": "This page put up some of the r script I used to analyze data from various experiment and surveys we conducted\n\n\n\n\n\n\nHow to Navigate\n\n\n\nClick or navigate to the left sidebar to analysis in r script we use for class and for research"
+  },
+  {
+    "objectID": "Data_Analysis.html#whats-on-this-page",
+    "href": "Data_Analysis.html#whats-on-this-page",
+    "title": "Analysis",
+    "section": "",
+    "text": "This page put up some of the r script I used to analyze data from various experiment and surveys we conducted\n\n\n\n\n\n\nHow to Navigate\n\n\n\nClick or navigate to the left sidebar to analysis in r script we use for class and for research"
+  },
+  {
+    "objectID": "Visualization.html",
+    "href": "Visualization.html",
+    "title": "Visualization",
+    "section": "",
+    "text": "This page put up some of the r script I used to analyze data from various experiment and surveys we conducted\n\n\n\n\n\n\nHow to Navigate\n\n\n\nClick or navigate to the left sidebar to analysis in r script we use for class and for research"
+  },
+  {
+    "objectID": "Visualization.html#whats-on-this-page",
+    "href": "Visualization.html#whats-on-this-page",
+    "title": "Visualization",
+    "section": "",
+    "text": "This page put up some of the r script I used to analyze data from various experiment and surveys we conducted\n\n\n\n\n\n\nHow to Navigate\n\n\n\nClick or navigate to the left sidebar to analysis in r script we use for class and for research"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Leo Jude Villasica",
+    "section": "Education",
+    "text": "Education\nVisayas State University | Baybay City, Philippines\nMS in Soil Science, | 2013 - 2015\nVisayas State University | Baybay City, Philippines\nBS in Agriculture major in Soil Science, | 2009 - 2013"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Leo Jude Villasica",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "about.html#other-designations",
+    "href": "about.html#other-designations",
+    "title": "Leo Jude Villasica",
+    "section": "Other Designations",
+    "text": "Other Designations\nResearch Center Director | Caraga Center for Agricultural Research and Entrepreneurship (Caraga-CARE) | 2018 - present\nManaging Editor | Journal of Ecosystem Sciences and Eco-Governance (JESEG) | 2019 - present"
   }
 ]

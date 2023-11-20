@@ -3,3 +3,9 @@ title: "Welcome!"
 ---
 
 This website is a repository of all the technical notes on my professional life.
+
+::: callout-note
+## Use of Content
+
+All contents in this website is for academic and research purposes only. Any form of disagreement about the contents posted here should be directly email to the author.
+:::

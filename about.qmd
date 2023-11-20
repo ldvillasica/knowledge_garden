@@ -1,9 +1,29 @@
 ---
-title: "About"
+title: "Leo Jude Villasica"
+about:
+  template: trestles
+  links:
+    - icon: envelope
+      text: Gmail
+      href: https://mail.google.com/
 ---
 
-## Leo Jude Villasica
+::: callout-note
+## Education
 
-Soil Scientist, Data Analyst and an active learner of new things.
+Visayas State University \| Baybay City, Philippines
 
-Currently I am a Faculty of the Department of Plant and Soil Science, College of Agriculture and Agri-industries (CAA), Caraga State University (CSU) since 2015.
+MS in Soil Science, \| 2013 - 2015
+
+Visayas State University \| Baybay City, Philippines
+
+BS in Agriculture major in Soil Science \| 2009 - 2013
+:::
+
+::: callout-note
+## Other Designation
+
+Research Center Director \| Caraga Center for Agricultural Research and Entrepreneurship (Caraga-CARE) \| 2018 - present
+
+Managing Editor \| Journal of Ecosystem Sciences and Eco-Governance (JESEG) \| 2019 - present
+:::

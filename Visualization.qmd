@@ -1,3 +1,13 @@
 ---
 title: "Visualization"
 ---
+
+## What's on this page?
+
+This page put up some of the r script I used to analyze data from various experiment and surveys we conducted
+
+::: callout-note
+## How to Navigate
+
+Click or navigate to the left sidebar to analysis in r script we use for class and for research
+:::

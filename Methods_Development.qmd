@@ -6,4 +6,8 @@ title: "Methods"
 
 This page shares the current and on-going methods being developed by the students in our laboratory.
 
+::: callout-note
+## How to Navigate
+
 Click or navigate to the left sidebar to view current methods being develop in our laboratory
+:::

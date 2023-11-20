@@ -9,6 +9,8 @@ website:
     left:
       - text: "Home"
         file: index.qmd
+      - text: "About"
+        file: about.qmd
       - text: "Notes"
         file: Notes.qmd
       - text: "Methods"
