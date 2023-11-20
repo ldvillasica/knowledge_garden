@@ -3,7 +3,7 @@ title: "Leo Jude Villasica"
 about:
   template: trestles
   links:
-    - icon: envelope
+    - icon: envelope-at-fill
       text: Gmail
       href: https://mail.google.com/
 ---
