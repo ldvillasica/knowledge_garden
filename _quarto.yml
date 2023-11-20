@@ -44,14 +44,12 @@ website:
         - Data_Analysis.qmd
         - Experimental Design Making
         - ANOVA
-        # navigation items
 
     - title: "Visualization"
       contents:
         - Visualization.qmd
         - Soil Profile Sketch
         - Soil Textural Cluster.qmd
-        # navigation items
 
 format:
   html:
