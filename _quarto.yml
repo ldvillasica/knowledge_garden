@@ -50,7 +50,7 @@ website:
       contents:
         - Visualization.qmd
         - Soil Profile Sketch
-        - Soil Textural Cluster
+        - Soil Textural Cluster.qmd
         # navigation items
 
 format:
