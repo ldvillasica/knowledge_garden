@@ -2,6 +2,7 @@
 title: "Leo Jude Villasica"
 about:
   template: trestles
+  image: profile.jpeg
   links:
     - icon: envelope-at-fill
       text: Gmail
