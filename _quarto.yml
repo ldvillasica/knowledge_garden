@@ -5,8 +5,8 @@ project:
 website:
   title: Knowledge Garden
   navbar:
-    search: true
-    left:
+    search: True
+    right:
       - text: "Home"
         file: index.qmd
       - text: "About"
@@ -19,6 +19,7 @@ website:
         file: Data_Analysis.qmd
       - text: "Visualization"
         file: Visualization.qmd
+    
   page-navigation: TRUE
   page-footer: "Copyright 2023, Leo Jude D. Villasica"
   

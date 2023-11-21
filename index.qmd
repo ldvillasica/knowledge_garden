@@ -1,9 +1,5 @@
 ---
 title: "Welcome!"
-listing:
-  contents:
-    - "Soil Textural Cluster.qmd"
-  type: table
 ---
 
 This website is a repository of all the technical notes on my professional life.
