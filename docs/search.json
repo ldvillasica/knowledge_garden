@@ -145,5 +145,12 @@
     "title": "Soil Textural Cluster",
     "section": "Creation of the Textural Diagram and Adding Data",
     "text": "Creation of the Textural Diagram and Adding Data\n\nTT &lt;- TT.plot(\n  class.sys = \"USDA.TT\",    # use \"our\" texture triangle\n  main = \"Soil Texture Cluster\",          # title\n  tri.sum.tst = FALSE,            # do not test for exact sum(sand, silt, clay) == 100\n  cex.lab = 0.75,                 # scaling of label text\n  cex.axis = 0.75,                # scaling of axis\n  frame.bg.col = 'white',         # background color\n  class.lab.col = 'black',        # color for texture class labels\n  lwd.axis = 1.5,\n  lwd.lab = 2,\n  arrows.show=TRUE\n)\n\nxy &lt;- TT.points(tri.data = ggsheet, geo = TT, tri.sum.tst = FALSE, cex=0.5, col=alpha('royalblue', 0.5))"
+  },
+  {
+    "objectID": "Experimental Design Making.html",
+    "href": "Experimental Design Making.html",
+    "title": "Experimental Design Making",
+    "section": "",
+    "text": "ReuseCC BY-NC-ND"
   }
 ]

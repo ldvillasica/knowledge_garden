@@ -43,7 +43,7 @@ website:
     - title: "Analysis"
       contents:
         - Data_Analysis.qmd
-        - Experimental Design Making
+        - Experimental Design Making.qmd
         - ANOVA
 
     - title: "Visualization"
