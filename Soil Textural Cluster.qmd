@@ -1,7 +1,47 @@
 ---
 title: "Soil Textural Cluster"
+author: Leo Jude D. Villasica
 ---
 
+## Packages Needed
+
+Here are the list of packages need to make a soil textural diagram
+
+-   `soiltexture` - Need for the triangulation of soil texture data (clay, silt and sand)
+
+-   `scales` - for proper scaling of the graph
+
+-   `googlesheets4`  - for importing data from Google sheets directly
+
 ```{r}
-# Soil Textural Cluster Visualization
+library(soiltexture)
+library(scales)
+library(googlesheets4)
+```
+
+## Import of Data
+
+For this part, we will be using the package `googlesheets4` using `range_read`
+
+```{r}
+ggsheet <- data.frame(range_read("https://docs.google.com/spreadsheets/d/1V-azZSYL14cvC5lrXtQ7lI17cSHOsWm1H82nbC6jRNE/edit#gid=71192194", sheet = "San Miguel Clean"))
+```
+
+## Creation of the Textural Diagram and Adding Data
+
+```{r}
+TT <- TT.plot(
+  class.sys = "USDA.TT",    # use "our" texture triangle
+  main = "Soil Texture Cluster",          # title
+  tri.sum.tst = FALSE,            # do not test for exact sum(sand, silt, clay) == 100
+  cex.lab = 0.75,                 # scaling of label text
+  cex.axis = 0.75,                # scaling of axis
+  frame.bg.col = 'white',         # background color
+  class.lab.col = 'black',        # color for texture class labels
+  lwd.axis = 1.5,
+  lwd.lab = 2,
+  arrows.show=TRUE
+)
+
+xy <- TT.points(tri.data = ggsheet, geo = TT, tri.sum.tst = FALSE, cex=0.5, col=alpha('royalblue', 0.5))
 ```

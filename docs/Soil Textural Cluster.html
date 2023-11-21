@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leo Jude D. Villasica">
 
 <title>Knowledge Garden - Soil Textural Cluster</title>
 <style>
@@ -183,7 +184,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#packages-needed" id="toc-packages-needed" class="nav-link active" data-scroll-target="#packages-needed">Packages Needed</a></li>
+  <li><a href="#import-of-data" id="toc-import-of-data" class="nav-link" data-scroll-target="#import-of-data">Import of Data</a></li>
+  <li><a href="#creation-of-the-textural-diagram-and-adding-data" id="toc-creation-of-the-textural-diagram-and-adding-data" class="nav-link" data-scroll-target="#creation-of-the-textural-diagram-and-adding-data">Creation of the Textural Diagram and Adding Data</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -197,6 +206,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Leo Jude D. Villasica </p>
+          </div>
+  </div>
     
   
     
@@ -205,11 +220,74 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<section id="packages-needed" class="level2">
+<h2 class="anchored" data-anchor-id="packages-needed">Packages Needed</h2>
+<p>Here are the list of packages need to make a soil textural diagram</p>
+<ul>
+<li><p><code>soiltexture</code> - Need for the triangulation of soil texture data (clay, silt and sand)</p></li>
+<li><p><code>scales</code> - for proper scaling of the graph</p></li>
+<li><p><code>googlesheets4</code> - for importing data from Google sheets directly</p></li>
+</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Soil Textural Cluster Visualization</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(soiltexture)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googlesheets4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="import-of-data" class="level2">
+<h2 class="anchored" data-anchor-id="import-of-data">Import of Data</h2>
+<p>For this part, we will be using the package <code>googlesheets4</code> using <code>range_read</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ggsheet <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">range_read</span>(<span class="st">"https://docs.google.com/spreadsheets/d/1V-azZSYL14cvC5lrXtQ7lI17cSHOsWm1H82nbC6jRNE/edit#gid=71192194"</span>, <span class="at">sheet =</span> <span class="st">"San Miguel Clean"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>! Using an auto-discovered, cached token.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  To suppress this message, modify your code or options to clearly consent to
+  the use of a cached token.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  See gargle's "Non-interactive auth" vignette for more details:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>  &lt;https://gargle.r-lib.org/articles/non-interactive-auth.html&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ The googlesheets4 package is using a cached token for
+  'ldvillasica@carsu.edu.ph'.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Reading from "Aggregation Study".</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Range ''San Miguel Clean''.</code></pre>
+</div>
+</div>
+</section>
+<section id="creation-of-the-textural-diagram-and-adding-data" class="level2">
+<h2 class="anchored" data-anchor-id="creation-of-the-textural-diagram-and-adding-data">Creation of the Textural Diagram and Adding Data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>TT <span class="ot">&lt;-</span> <span class="fu">TT.plot</span>(</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">class.sys =</span> <span class="st">"USDA.TT"</span>,    <span class="co"># use "our" texture triangle</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Soil Texture Cluster"</span>,          <span class="co"># title</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">tri.sum.tst =</span> <span class="cn">FALSE</span>,            <span class="co"># do not test for exact sum(sand, silt, clay) == 100</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex.lab =</span> <span class="fl">0.75</span>,                 <span class="co"># scaling of label text</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex.axis =</span> <span class="fl">0.75</span>,                <span class="co"># scaling of axis</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">frame.bg.col =</span> <span class="st">'white'</span>,         <span class="co"># background color</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">class.lab.col =</span> <span class="st">'black'</span>,        <span class="co"># color for texture class labels</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">lwd.axis =</span> <span class="fl">1.5</span>,</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">lwd.lab =</span> <span class="dv">2</span>,</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">arrows.show=</span><span class="cn">TRUE</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>xy <span class="ot">&lt;-</span> <span class="fu">TT.points</span>(<span class="at">tri.data =</span> ggsheet, <span class="at">geo =</span> TT, <span class="at">tri.sum.tst =</span> <span class="cn">FALSE</span>, <span class="at">cex=</span><span class="fl">0.5</span>, <span class="at">col=</span><span class="fu">alpha</span>(<span class="st">'royalblue'</span>, <span class="fl">0.5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Soil-Textural-Cluster_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 
 
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div>CC BY-NC-ND</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
